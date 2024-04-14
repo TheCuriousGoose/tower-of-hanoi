@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(69, 76, 92, 0.8);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    width: 30%;
+    height: 30%;
+}
+
+#end-game-overlay{
+    display: none;
+}
+
+#player-name {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 40rem;
+    height: 4rem;
+    background-color: #9c9c9c;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time-played {
+    text-align: center;
+    font-size: larger;
+}
+
+.card-header {
+    width: auto;
+    height: 4rem;
+    margin: 0 1rem;
+    border-bottom: 1px lightgray solid;
+    align-content: center;
+}
+
+.card-body {
+    display: flex;
+    padding: 1rem 0.5rem;
+    flex-direction: column;
+}
+
+.btn {
+    width: auto;
+    border: none;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+label {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
+    height: 1rem;
+    border: solid 1px #9c9c9c;
+}
+
+#timer {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: #b4b4b4;
+    border-radius: 0.5rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 0.5rem;
+}
+
+#game-container {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    margin: auto auto;
+}
+
+section {
+    width: 33.33%;
+    height: 100%;
+}
+
+#tower-1 {
+    background-color: lightgray;
+}
+
+#tower-2 {
+    background-color: #b4b4b4;
+}
+
+#tower-3 {
+    background-color: #9c9c9c;
+}
+
+.pieces-container {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.pieces-container:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.base {
+    width: 90%;
+    margin: 1rem auto;
+    height: 5%;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+.piece:first-of-type {
+    margin-top: auto;
+}
+
+.piece {
+    height: 75px;
+    margin: 0.25rem auto;
+    border-radius: 1rem;
+    filter: drop-shadow(3px 10px 4px #9e9e9e);
+}
+
+.piece:hover{
+    border: 1px black solid
+}
+
+#hold-moving-block {
+    position: absolute;
+    top: 8rem;
+    /* background-color: red; */
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    z-index: 29;
+}
+
+
